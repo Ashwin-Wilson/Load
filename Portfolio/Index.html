@@ -7,9 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
-     <button onclick="sum()">click me</button>
+    <input type="text" id="inp">
+     <button onclick="Display()">click me</button>
+     <h1 id="Name"></h1>
     <script>
+        function Display(){
+            var Name=document.getElementById("inp").value
+            document.getElementById("Name").innerHTML=Name
+            if(Name=="Ashwin"){
+                alert("How are you..?")
+            }
+        }
             function sum(){
                 var a=10,b=20,sum=a+b;
                 var c= "even";
