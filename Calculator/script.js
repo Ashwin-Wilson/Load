@@ -2,10 +2,15 @@ let Num=0, Opr=0,result=0;
 function Number(Num){
     document.getElementById("Display").value=document.getElementById("Display").value+Num;
 }
+function DisableBtn(){
+    document.getElementById("point").disabled = true;
+}
 function Operant(opr){
     Num=document.getElementById("Display").value;
     document.getElementById("Display").value="";
     Opr=opr; 
+    document.getElementById("point").disabled = false;
+
 }
 function Result(){
     console.log(Opr)
@@ -26,6 +31,7 @@ function Result(){
         result=Num-document.getElementById("Display").value;
         document.getElementById("Display").value=result;
     }
+    document.getElementById("point").disabled = false;
 }
 function clrScrn(){
     document.getElementById("Display").value="";
