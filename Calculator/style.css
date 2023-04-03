@@ -1,24 +1,18 @@
 .calc{
-    width: 700PX;
-    height: fit-content;
-    background-color: aqua;
+    width: 700px;
+    height: auto;
+    background-color: black;
     margin-left: 30%;
-}
-.btn{
-    width: 15%;
-    height: fit-content;
-    border-color: black;
-    margin-left: 5%;
-    margin-top: 5%;
+
 }
 .Display{
     width: 90%;
-    height: 30%;
 }
-.DisplayRow{
-    margin-left: 5%;
+.btn{
+    width: 20px;
+    height: 20px;
+    color: white;
 }
-row{
-    width: 100%;
-    padding-left: 50px;
+.row{
+    
 }
